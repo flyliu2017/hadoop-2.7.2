@@ -1,0 +1,16 @@
+addprinc -randkey nn/singlenode.ustc.edu
+ktadd -k /etc/security/keytab/nn.service.keytab nn/singlenode.ustc.edu
+addprinc -randkey sn/singlenode.ustc.edu
+ktadd -k /etc/security/keytab/sn.service.keytab sn/singlenode.ustc.edu
+addprinc -randkey dn/singlenode.ustc.edu
+ktadd -k /etc/security/keytab/dn.service.keytab dn/singlenode.ustc.edu
+addprinc -randkey jhs/singlenode.ustc.edu
+ktadd -k /etc/security/keytab/jhs.service.keytab jhs/singlenode.ustc.edu
+addprinc -randkey HTTP/singlenode.ustc.edu
+ktadd -k /etc/security/keytab/spnego.service.keytab HTTP/singlenode.ustc.edu
+addprinc -randkey rm/resourcemanager.ustc.edu
+ktadd -k /etc/security/keytab/rm.service.keytab rm/resourcemanager.ustc.edu
+addprinc -randkey nm/resourcemanager.ustc.edu
+ktadd -k /etc/security/keytab/nm.service.keytab nm/resourcemanager.ustc.edu
+addprinc -randkey HTTP/resourcemanager.ustc.edu
+ktadd -k /etc/security/keytab/spnego.service.keytab HTTP/resourcemanager.ustc.edu

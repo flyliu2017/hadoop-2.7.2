@@ -1,0 +1,36 @@
+2018-02-23 19:39:09,608 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2018-02-23 19:39:09,648 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2018-02-23 19:39:09,648 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2018-02-23 19:39:09,653 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2018-02-23 19:39:09,653 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1519385105809_0001, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@ba2f4ec)
+2018-02-23 19:39:09,695 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2018-02-23 19:39:09,826 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /opt/hadoop-2.7.2/tmp/nm-local-dir/usercache/root/appcache/application_1519385105809_0001
+2018-02-23 19:39:09,939 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-02-23 19:39:10,136 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2018-02-23 19:39:10,141 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-02-23 19:39:10,155 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 4539
+2018-02-23 19:39:10,155 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 4596
+2018-02-23 19:39:10,155 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 5453
+2018-02-23 19:39:10,157 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 10309
+2018-02-23 19:39:10,226 INFO [main] org.apache.hadoop.mapred.MapTask: Processing split: hdfs://singlenode:9000/test.txt:0+13
+2018-02-23 19:39:10,259 INFO [main] org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-02-23 19:39:10,259 INFO [main] org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-02-23 19:39:10,259 INFO [main] org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2018-02-23 19:39:10,259 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-02-23 19:39:10,259 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-02-23 19:39:10,262 INFO [main] org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-02-23 19:39:10,314 INFO [main] org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2018-02-23 19:39:10,314 INFO [main] org.apache.hadoop.mapred.MapTask: Spilling map output
+2018-02-23 19:39:10,314 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 20; bufvoid = 104857600
+2018-02-23 19:39:10,314 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+2018-02-23 19:39:10,322 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2018-02-23 19:39:10,325 INFO [main] org.apache.hadoop.mapred.Task: Task:attempt_1519385105809_0001_m_000000_0 is done. And is in the process of committing
+2018-02-23 19:39:10,342 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 4539
+2018-02-23 19:39:10,342 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 4596
+2018-02-23 19:39:10,342 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 5453
+2018-02-23 19:39:10,344 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 10309
+2018-02-23 19:39:10,363 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 4539
+2018-02-23 19:39:10,363 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 4596
+2018-02-23 19:39:10,364 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 5453
+2018-02-23 19:39:10,365 WARN [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: Unexpected: procfs stat file is not in the expected format for process with pid 10309
+2018-02-23 19:39:10,375 INFO [main] org.apache.hadoop.mapred.Task: Task 'attempt_1519385105809_0001_m_000000_0' done.

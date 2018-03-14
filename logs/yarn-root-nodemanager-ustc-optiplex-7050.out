@@ -1,0 +1,14 @@
+二月 23, 2018 7:25:07 下午 com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+信息: Registering org.apache.hadoop.yarn.server.nodemanager.webapp.NMWebServices as a root resource class
+二月 23, 2018 7:25:07 下午 com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+信息: Registering org.apache.hadoop.yarn.webapp.GenericExceptionHandler as a provider class
+二月 23, 2018 7:25:07 下午 com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory register
+信息: Registering org.apache.hadoop.yarn.server.nodemanager.webapp.JAXBContextResolver as a provider class
+二月 23, 2018 7:25:07 下午 com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+信息: Initiating Jersey application, version 'Jersey: 1.9 09/02/2011 11:17 AM'
+二月 23, 2018 7:25:07 下午 com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+信息: Binding org.apache.hadoop.yarn.server.nodemanager.webapp.JAXBContextResolver to GuiceManagedComponentProvider with the scope "Singleton"
+二月 23, 2018 7:25:07 下午 com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+信息: Binding org.apache.hadoop.yarn.webapp.GenericExceptionHandler to GuiceManagedComponentProvider with the scope "Singleton"
+二月 23, 2018 7:25:08 下午 com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory getComponentProvider
+信息: Binding org.apache.hadoop.yarn.server.nodemanager.webapp.NMWebServices to GuiceManagedComponentProvider with the scope "Singleton"

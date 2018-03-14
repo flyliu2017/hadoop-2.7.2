@@ -1,0 +1,1080 @@
+2018-02-23 18:56:40,056 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ustc-OptiPlex-7050/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.7.2
+STARTUP_MSG:   classpath = /opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-client-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-auth-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-framework-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r b165c4fe8a74265c792ce23f546c64604acf0e41; compiled by 'jenkins' on 2016-01-26T00:08Z
+STARTUP_MSG:   java = 1.8.0_161
+************************************************************/
+2018-02-23 18:56:40,063 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2018-02-23 18:56:40,354 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2018-02-23 18:56:40,388 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2018-02-23 18:56:40,388 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2018-02-23 18:56:40,598 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /opt/hadoop-2.7.2/tmp/dfs/namesecondary/in_use.lock acquired by nodename 8253@ustc-OptiPlex-7050
+2018-02-23 18:56:40,602 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2018-02-23 18:56:40,602 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2018-02-23 18:56:40,647 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2018-02-23 18:56:40,647 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2018-02-23 18:56:40,648 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2018-02-23 18:56:40,649 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2018 二月 23 18:56:40
+2018-02-23 18:56:40,650 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2018-02-23 18:56:40,651 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-23 18:56:40,652 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2018-02-23 18:56:40,652 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2018-02-23 18:56:40,663 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2018-02-23 18:56:40,663 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2018-02-23 18:56:40,663 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2018-02-23 18:56:40,663 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2018-02-23 18:56:40,663 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2018-02-23 18:56:40,663 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2018-02-23 18:56:40,663 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2018-02-23 18:56:40,663 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2018-02-23 18:56:40,664 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = root (auth:SIMPLE)
+2018-02-23 18:56:40,664 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2018-02-23 18:56:40,664 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2018-02-23 18:56:40,664 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2018-02-23 18:56:40,665 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2018-02-23 18:56:40,794 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2018-02-23 18:56:40,794 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-23 18:56:40,794 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2018-02-23 18:56:40,794 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2018-02-23 18:56:40,794 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2018-02-23 18:56:40,794 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2018-02-23 18:56:40,794 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2018-02-23 18:56:40,794 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2018-02-23 18:56:40,798 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2018-02-23 18:56:40,798 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-23 18:56:40,798 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2018-02-23 18:56:40,798 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2018-02-23 18:56:40,810 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2018-02-23 18:56:40,810 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2018-02-23 18:56:40,810 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2018-02-23 18:56:40,811 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2018-02-23 18:56:40,811 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2018-02-23 18:56:40,811 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2018-02-23 18:56:40,817 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for secondary at: http://0.0.0.0:50090
+2018-02-23 18:56:40,851 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2018-02-23 18:56:40,855 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2018-02-23 18:56:40,857 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.secondary is not defined
+2018-02-23 18:56:40,860 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2018-02-23 18:56:40,861 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2018-02-23 18:56:40,862 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2018-02-23 18:56:40,862 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2018-02-23 18:56:40,869 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50090
+2018-02-23 18:56:40,869 INFO org.mortbay.log: jetty-6.1.26
+2018-02-23 18:56:40,973 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50090
+2018-02-23 18:56:40,973 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2018-02-23 18:56:40,977 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2018-02-23 18:56:40,977 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2018-02-23 18:57:41,383 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2018-02-23 18:57:41,426 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getimage=1&txid=0&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-23 18:57:41,443 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Image Transfer timeout configured to 60000 milliseconds
+2018-02-23 18:57:41,584 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.05s at 0.00 KB/s
+2018-02-23 18:57:41,584 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000000 size 351 bytes.
+2018-02-23 18:57:41,635 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=1&endTxId=2&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-23 18:57:41,684 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.05s at 0.00 KB/s
+2018-02-23 18:57:41,684 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000001-0000000000000000002_0000000000031268015 size 0 bytes.
+2018-02-23 18:57:41,723 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatPBINode: Loading 1 INodes.
+2018-02-23 18:57:41,740 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Loaded FSImage in 0 seconds.
+2018-02-23 18:57:41,740 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 0 from /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000000
+2018-02-23 18:57:41,740 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2018-02-23 18:57:41,743 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-23 18:57:41,746 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000002 expecting start txid #1
+2018-02-23 18:57:41,746 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000002
+2018-02-23 18:57:41,753 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000002 of size 42 edits # 2 loaded in 0 seconds
+2018-02-23 18:57:41,810 INFO org.apache.hadoop.hdfs.server.namenode.FSImageTransactionalStorageInspector: No version file in /opt/hadoop-2.7.2/tmp/dfs/namesecondary
+2018-02-23 18:57:41,964 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 2 to namenode at http://singlenode:50070 in 0.129 seconds
+2018-02-23 18:57:41,965 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 351
+2018-02-23 19:57:42,384 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-23 19:57:42,385 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=3&endTxId=100&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-23 19:57:42,416 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.03s at 392.86 KB/s
+2018-02-23 19:57:42,416 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000003-0000000000000000100_0000000000034868765 size 0 bytes.
+2018-02-23 19:57:42,416 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-23 19:57:42,416 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000003-0000000000000000100 expecting start txid #3
+2018-02-23 19:57:42,416 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000003-0000000000000000100
+2018-02-23 19:57:42,446 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000003-0000000000000000100 of size 11704 edits # 98 loaded in 0 seconds
+2018-02-23 19:57:42,475 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 2
+2018-02-23 19:57:42,475 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2018-02-23 19:57:42,545 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 100 to namenode at http://singlenode:50070 in 0.058 seconds
+2018-02-23 19:57:42,546 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1504
+2018-02-23 20:57:42,876 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-23 20:57:42,876 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=101&endTxId=102&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-23 20:57:42,924 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.05s at 0.00 KB/s
+2018-02-23 20:57:42,924 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000101-0000000000000000102_0000000000038469256 size 0 bytes.
+2018-02-23 20:57:42,924 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-23 20:57:42,925 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000101-0000000000000000102 expecting start txid #101
+2018-02-23 20:57:42,925 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000101-0000000000000000102
+2018-02-23 20:57:42,925 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000101-0000000000000000102 of size 42 edits # 2 loaded in 0 seconds
+2018-02-23 20:57:42,975 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 100
+2018-02-23 20:57:42,975 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000002, cpktTxId=0000000000000000002)
+2018-02-23 20:57:43,051 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 102 to namenode at http://singlenode:50070 in 0.063 seconds
+2018-02-23 20:57:43,051 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1504
+2018-02-23 21:16:38,622 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2018-02-23 21:16:38,636 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ustc-OptiPlex-7050/127.0.1.1
+************************************************************/
+2018-02-24 09:31:48,248 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ustc-OptiPlex-7050/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.7.2
+STARTUP_MSG:   classpath = /opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-client-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-auth-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-framework-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r b165c4fe8a74265c792ce23f546c64604acf0e41; compiled by 'jenkins' on 2016-01-26T00:08Z
+STARTUP_MSG:   java = 1.8.0_161
+************************************************************/
+2018-02-24 09:31:48,270 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2018-02-24 09:31:48,543 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2018-02-24 09:31:48,579 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2018-02-24 09:31:48,579 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2018-02-24 09:31:48,727 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /opt/hadoop-2.7.2/tmp/dfs/namesecondary/in_use.lock acquired by nodename 11039@ustc-OptiPlex-7050
+2018-02-24 09:31:48,753 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2018-02-24 09:31:48,753 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2018-02-24 09:31:48,773 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2018-02-24 09:31:48,773 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2018-02-24 09:31:48,774 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2018-02-24 09:31:48,775 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2018 二月 24 09:31:48
+2018-02-24 09:31:48,776 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2018-02-24 09:31:48,776 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-24 09:31:48,776 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2018-02-24 09:31:48,776 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2018-02-24 09:31:48,786 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2018-02-24 09:31:48,787 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2018-02-24 09:31:48,787 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2018-02-24 09:31:48,787 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2018-02-24 09:31:48,787 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2018-02-24 09:31:48,787 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2018-02-24 09:31:48,787 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2018-02-24 09:31:48,787 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2018-02-24 09:31:48,788 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = root (auth:SIMPLE)
+2018-02-24 09:31:48,788 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2018-02-24 09:31:48,788 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2018-02-24 09:31:48,788 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2018-02-24 09:31:48,789 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2018-02-24 09:31:48,897 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2018-02-24 09:31:48,897 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-24 09:31:48,897 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2018-02-24 09:31:48,897 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2018-02-24 09:31:48,898 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2018-02-24 09:31:48,898 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2018-02-24 09:31:48,898 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2018-02-24 09:31:48,898 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2018-02-24 09:31:48,901 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2018-02-24 09:31:48,901 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-24 09:31:48,902 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2018-02-24 09:31:48,902 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2018-02-24 09:31:48,912 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2018-02-24 09:31:48,912 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2018-02-24 09:31:48,912 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2018-02-24 09:31:48,914 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2018-02-24 09:31:48,914 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2018-02-24 09:31:48,914 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2018-02-24 09:31:48,919 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for secondary at: http://0.0.0.0:50090
+2018-02-24 09:31:48,951 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2018-02-24 09:31:48,954 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2018-02-24 09:31:48,957 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.secondary is not defined
+2018-02-24 09:31:48,959 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2018-02-24 09:31:48,960 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2018-02-24 09:31:48,960 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2018-02-24 09:31:48,960 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2018-02-24 09:31:48,967 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50090
+2018-02-24 09:31:48,967 INFO org.mortbay.log: jetty-6.1.26
+2018-02-24 09:31:49,026 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50090
+2018-02-24 09:31:49,026 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2018-02-24 09:31:49,031 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2018-02-24 09:31:49,031 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2018-02-24 10:12:49,891 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2018-02-24 10:12:50,085 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getimage=1&txid=103&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-24 10:12:50,148 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Image Transfer timeout configured to 60000 milliseconds
+2018-02-24 10:12:50,270 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.03s at 30.30 KB/s
+2018-02-24 10:12:50,270 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000103 size 1504 bytes.
+2018-02-24 10:12:50,321 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=104&endTxId=105&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-24 10:12:50,371 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.05s at 0.00 KB/s
+2018-02-24 10:12:50,371 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000104-0000000000000000105_0000000000003653068 size 0 bytes.
+2018-02-24 10:12:50,414 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatPBINode: Loading 16 INodes.
+2018-02-24 10:12:50,436 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Loaded FSImage in 0 seconds.
+2018-02-24 10:12:50,436 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 103 from /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000103
+2018-02-24 10:12:50,436 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2018-02-24 10:12:50,439 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-24 10:12:50,441 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000104-0000000000000000105 expecting start txid #104
+2018-02-24 10:12:50,441 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000104-0000000000000000105
+2018-02-24 10:12:50,448 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000104-0000000000000000105 of size 42 edits # 2 loaded in 0 seconds
+2018-02-24 10:12:50,532 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 103
+2018-02-24 10:12:50,532 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000100, cpktTxId=0000000000000000100)
+2018-02-24 10:12:50,532 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000102, cpktTxId=0000000000000000102)
+2018-02-24 10:12:50,694 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 105 to namenode at http://singlenode:50070 in 0.141 seconds
+2018-02-24 10:12:50,694 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1504
+2018-02-24 11:12:51,462 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-24 11:12:51,463 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=106&endTxId=109&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-24 11:12:51,519 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.05s at 0.00 KB/s
+2018-02-24 11:12:51,519 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000106-0000000000000000109_0000000000007254210 size 0 bytes.
+2018-02-24 11:12:51,519 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-24 11:12:51,519 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000106-0000000000000000109 expecting start txid #106
+2018-02-24 11:12:51,520 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000106-0000000000000000109
+2018-02-24 11:12:51,528 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000106-0000000000000000109 of size 102 edits # 4 loaded in 0 seconds
+2018-02-24 11:12:51,586 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 105
+2018-02-24 11:12:51,587 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000103, cpktTxId=0000000000000000103)
+2018-02-24 11:12:51,697 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 109 to namenode at http://singlenode:50070 in 0.097 seconds
+2018-02-24 11:12:51,698 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1504
+2018-02-24 12:12:52,060 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-24 12:12:52,060 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=110&endTxId=112&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-24 12:12:52,116 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.05s at 0.00 KB/s
+2018-02-24 12:12:52,116 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000110-0000000000000000112_0000000000010854807 size 0 bytes.
+2018-02-24 12:12:52,117 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-24 12:12:52,117 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000110-0000000000000000112 expecting start txid #110
+2018-02-24 12:12:52,117 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000110-0000000000000000112
+2018-02-24 12:12:52,118 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000110-0000000000000000112 of size 86 edits # 3 loaded in 0 seconds
+2018-02-24 12:12:52,183 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 109
+2018-02-24 12:12:52,184 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000105, cpktTxId=0000000000000000105)
+2018-02-24 12:12:52,286 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 112 to namenode at http://singlenode:50070 in 0.091 seconds
+2018-02-24 12:12:52,286 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1504
+2018-02-24 13:12:52,634 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-24 13:12:52,635 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=113&endTxId=114&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-24 13:12:52,674 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.04s at 0.00 KB/s
+2018-02-24 13:12:52,674 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000113-0000000000000000114_0000000000014455382 size 0 bytes.
+2018-02-24 13:12:52,674 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-24 13:12:52,674 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000113-0000000000000000114 expecting start txid #113
+2018-02-24 13:12:52,674 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000113-0000000000000000114
+2018-02-24 13:12:52,675 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000113-0000000000000000114 of size 42 edits # 2 loaded in 0 seconds
+2018-02-24 13:12:52,741 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 112
+2018-02-24 13:12:52,742 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000109, cpktTxId=0000000000000000109)
+2018-02-24 13:12:52,811 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 114 to namenode at http://singlenode:50070 in 0.055 seconds
+2018-02-24 13:12:52,811 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1504
+2018-02-24 14:12:53,151 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-24 14:12:53,152 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=115&endTxId=116&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-24 14:12:53,207 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.05s at 0.00 KB/s
+2018-02-24 14:12:53,208 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000115-0000000000000000116_0000000000018055899 size 0 bytes.
+2018-02-24 14:12:53,208 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-24 14:12:53,208 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000115-0000000000000000116 expecting start txid #115
+2018-02-24 14:12:53,208 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000115-0000000000000000116
+2018-02-24 14:12:53,209 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000115-0000000000000000116 of size 42 edits # 2 loaded in 0 seconds
+2018-02-24 14:12:53,267 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 114
+2018-02-24 14:12:53,267 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000112, cpktTxId=0000000000000000112)
+2018-02-24 14:12:53,361 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 116 to namenode at http://singlenode:50070 in 0.087 seconds
+2018-02-24 14:12:53,362 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1504
+2018-02-24 15:12:53,691 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-24 15:12:53,691 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=117&endTxId=118&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-24 15:12:53,740 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.05s at 0.00 KB/s
+2018-02-24 15:12:53,740 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000117-0000000000000000118_0000000000021656439 size 0 bytes.
+2018-02-24 15:12:53,741 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-24 15:12:53,741 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000117-0000000000000000118 expecting start txid #117
+2018-02-24 15:12:53,741 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000117-0000000000000000118
+2018-02-24 15:12:53,741 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000117-0000000000000000118 of size 42 edits # 2 loaded in 0 seconds
+2018-02-24 15:12:53,783 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 116
+2018-02-24 15:12:53,783 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000114, cpktTxId=0000000000000000114)
+2018-02-24 15:12:53,885 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 118 to namenode at http://singlenode:50070 in 0.095 seconds
+2018-02-24 15:12:53,886 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1504
+2018-02-24 16:12:54,233 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-24 16:12:54,234 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=119&endTxId=122&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-24 16:12:54,289 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.05s at 0.00 KB/s
+2018-02-24 16:12:54,289 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000119-0000000000000000122_0000000000025256981 size 0 bytes.
+2018-02-24 16:12:54,290 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-24 16:12:54,290 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000119-0000000000000000122 expecting start txid #119
+2018-02-24 16:12:54,290 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000119-0000000000000000122
+2018-02-24 16:12:54,300 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000119-0000000000000000122 of size 157 edits # 4 loaded in 0 seconds
+2018-02-24 16:12:54,348 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 118
+2018-02-24 16:12:54,348 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000116, cpktTxId=0000000000000000116)
+2018-02-24 16:12:54,452 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 122 to namenode at http://singlenode:50070 in 0.097 seconds
+2018-02-24 16:12:54,452 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1504
+2018-02-24 17:01:52,544 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2018-02-24 17:01:52,547 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ustc-OptiPlex-7050/127.0.1.1
+************************************************************/
+2018-02-26 09:32:11,492 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ustc-OptiPlex-7050/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.7.2
+STARTUP_MSG:   classpath = /opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-client-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-auth-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-framework-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r b165c4fe8a74265c792ce23f546c64604acf0e41; compiled by 'jenkins' on 2016-01-26T00:08Z
+STARTUP_MSG:   java = 1.8.0_161
+************************************************************/
+2018-02-26 09:32:11,523 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2018-02-26 09:32:11,813 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2018-02-26 09:32:11,851 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2018-02-26 09:32:11,851 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2018-02-26 09:32:12,006 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /opt/hadoop-2.7.2/tmp/dfs/namesecondary/in_use.lock acquired by nodename 7407@ustc-OptiPlex-7050
+2018-02-26 09:32:12,060 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2018-02-26 09:32:12,060 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2018-02-26 09:32:12,086 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2018-02-26 09:32:12,086 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2018-02-26 09:32:12,087 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2018-02-26 09:32:12,089 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2018 二月 26 09:32:12
+2018-02-26 09:32:12,091 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2018-02-26 09:32:12,091 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-26 09:32:12,092 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2018-02-26 09:32:12,092 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2018-02-26 09:32:12,103 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2018-02-26 09:32:12,103 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2018-02-26 09:32:12,103 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2018-02-26 09:32:12,103 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2018-02-26 09:32:12,103 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2018-02-26 09:32:12,103 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2018-02-26 09:32:12,103 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2018-02-26 09:32:12,103 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2018-02-26 09:32:12,104 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = root (auth:SIMPLE)
+2018-02-26 09:32:12,104 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2018-02-26 09:32:12,104 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2018-02-26 09:32:12,104 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2018-02-26 09:32:12,105 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2018-02-26 09:32:12,229 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2018-02-26 09:32:12,229 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-26 09:32:12,229 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2018-02-26 09:32:12,230 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2018-02-26 09:32:12,230 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2018-02-26 09:32:12,230 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2018-02-26 09:32:12,230 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2018-02-26 09:32:12,230 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2018-02-26 09:32:12,234 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2018-02-26 09:32:12,234 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-26 09:32:12,234 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2018-02-26 09:32:12,234 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2018-02-26 09:32:12,245 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2018-02-26 09:32:12,246 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2018-02-26 09:32:12,246 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2018-02-26 09:32:12,248 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2018-02-26 09:32:12,248 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2018-02-26 09:32:12,248 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2018-02-26 09:32:12,256 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for secondary at: http://0.0.0.0:50090
+2018-02-26 09:32:12,290 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2018-02-26 09:32:12,294 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2018-02-26 09:32:12,297 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.secondary is not defined
+2018-02-26 09:32:12,300 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2018-02-26 09:32:12,301 WARN org.apache.hadoop.http.lib.StaticUserWebFilter: dfs.web.ugi should not be used. Instead, use hadoop.http.staticuser.user.
+2018-02-26 09:32:12,301 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2018-02-26 09:32:12,301 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2018-02-26 09:32:12,301 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2018-02-26 09:32:12,309 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50090
+2018-02-26 09:32:12,309 INFO org.mortbay.log: jetty-6.1.26
+2018-02-26 09:32:12,374 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50090
+2018-02-26 09:32:12,374 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2018-02-26 09:32:12,378 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2018-02-26 09:32:12,378 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2018-02-26 09:33:12,756 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2018-02-26 09:33:12,931 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getimage=1&txid=123&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-26 09:33:12,966 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Image Transfer timeout configured to 60000 milliseconds
+2018-02-26 09:33:13,108 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.04s at 25.64 KB/s
+2018-02-26 09:33:13,108 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000123 size 1504 bytes.
+2018-02-26 09:33:13,144 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=124&endTxId=125&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-26 09:33:13,177 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.03s at 0.00 KB/s
+2018-02-26 09:33:13,177 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000124-0000000000000000125_0000000000003742189 size 0 bytes.
+2018-02-26 09:33:13,214 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatPBINode: Loading 16 INodes.
+2018-02-26 09:33:13,236 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Loaded FSImage in 0 seconds.
+2018-02-26 09:33:13,236 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 123 from /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000123
+2018-02-26 09:33:13,236 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2018-02-26 09:33:13,239 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-26 09:33:13,241 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000124-0000000000000000125 expecting start txid #124
+2018-02-26 09:33:13,241 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000124-0000000000000000125
+2018-02-26 09:33:13,248 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000124-0000000000000000125 of size 42 edits # 2 loaded in 0 seconds
+2018-02-26 09:33:13,313 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 123
+2018-02-26 09:33:13,314 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000122, cpktTxId=0000000000000000122)
+2018-02-26 09:33:13,314 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000118, cpktTxId=0000000000000000118)
+2018-02-26 09:33:13,423 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 125 to namenode at http://singlenode:50070 in 0.093 seconds
+2018-02-26 09:33:13,423 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1504
+2018-02-26 09:42:58,266 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2018-02-26 09:42:58,267 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ustc-OptiPlex-7050/127.0.1.1
+************************************************************/
+2018-02-26 09:47:24,375 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ustc-OptiPlex-7050/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.7.2
+STARTUP_MSG:   classpath = /opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-client-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-auth-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-framework-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r b165c4fe8a74265c792ce23f546c64604acf0e41; compiled by 'jenkins' on 2016-01-26T00:08Z
+STARTUP_MSG:   java = 1.8.0_161
+************************************************************/
+2018-02-26 09:47:24,381 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2018-02-26 09:47:24,651 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2018-02-26 09:47:24,684 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2018-02-26 09:47:24,684 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2018-02-26 09:47:24,846 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /opt/hadoop-2.7.2/tmp/dfs/namesecondary/in_use.lock acquired by nodename 8837@ustc-OptiPlex-7050
+2018-02-26 09:47:24,896 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2018-02-26 09:47:24,896 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2018-02-26 09:47:24,917 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2018-02-26 09:47:24,918 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2018-02-26 09:47:24,918 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2018-02-26 09:47:24,919 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2018 二月 26 09:47:24
+2018-02-26 09:47:24,920 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2018-02-26 09:47:24,920 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-26 09:47:24,921 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2018-02-26 09:47:24,921 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2018-02-26 09:47:24,931 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2018-02-26 09:47:24,932 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2018-02-26 09:47:24,932 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2018-02-26 09:47:24,932 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2018-02-26 09:47:24,932 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2018-02-26 09:47:24,932 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2018-02-26 09:47:24,932 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2018-02-26 09:47:24,932 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2018-02-26 09:47:24,933 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = root (auth:SIMPLE)
+2018-02-26 09:47:24,933 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2018-02-26 09:47:24,933 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2018-02-26 09:47:24,933 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2018-02-26 09:47:24,934 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2018-02-26 09:47:25,040 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2018-02-26 09:47:25,040 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-26 09:47:25,040 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2018-02-26 09:47:25,040 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2018-02-26 09:47:25,041 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2018-02-26 09:47:25,041 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2018-02-26 09:47:25,041 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2018-02-26 09:47:25,041 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2018-02-26 09:47:25,044 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2018-02-26 09:47:25,044 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-26 09:47:25,045 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2018-02-26 09:47:25,045 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2018-02-26 09:47:25,055 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2018-02-26 09:47:25,055 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2018-02-26 09:47:25,055 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2018-02-26 09:47:25,056 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2018-02-26 09:47:25,056 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2018-02-26 09:47:25,057 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2018-02-26 09:47:25,062 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for secondary at: http://0.0.0.0:50090
+2018-02-26 09:47:25,093 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2018-02-26 09:47:25,097 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2018-02-26 09:47:25,100 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.secondary is not defined
+2018-02-26 09:47:25,103 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2018-02-26 09:47:25,104 WARN org.apache.hadoop.http.lib.StaticUserWebFilter: dfs.web.ugi should not be used. Instead, use hadoop.http.staticuser.user.
+2018-02-26 09:47:25,104 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2018-02-26 09:47:25,104 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2018-02-26 09:47:25,104 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2018-02-26 09:47:25,111 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50090
+2018-02-26 09:47:25,111 INFO org.mortbay.log: jetty-6.1.26
+2018-02-26 09:47:25,168 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50090
+2018-02-26 09:47:25,168 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2018-02-26 09:47:25,173 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2018-02-26 09:47:25,173 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2018-02-26 09:48:25,446 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2018-02-26 09:48:25,485 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getimage=1&txid=125&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-26 09:48:25,501 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Image Transfer timeout configured to 60000 milliseconds
+2018-02-26 09:48:25,597 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.03s at 29.41 KB/s
+2018-02-26 09:48:25,597 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000125 size 1504 bytes.
+2018-02-26 09:48:25,631 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=126&endTxId=128&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-26 09:48:25,706 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.07s at 14422.54 KB/s
+2018-02-26 09:48:25,706 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000126-0000000000000000128_0000000000004654676 size 0 bytes.
+2018-02-26 09:48:25,707 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=129&endTxId=131&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-26 09:48:25,731 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.02s at 0.00 KB/s
+2018-02-26 09:48:25,731 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000129-0000000000000000131_0000000000004654752 size 0 bytes.
+2018-02-26 09:48:25,773 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatPBINode: Loading 16 INodes.
+2018-02-26 09:48:25,794 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Loaded FSImage in 0 seconds.
+2018-02-26 09:48:25,794 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 125 from /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000125
+2018-02-26 09:48:25,794 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2018-02-26 09:48:25,797 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 2 stream(s).
+2018-02-26 09:48:25,799 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000126-0000000000000000128 expecting start txid #126
+2018-02-26 09:48:25,799 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000126-0000000000000000128
+2018-02-26 09:48:25,819 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000126-0000000000000000128 of size 1048576 edits # 3 loaded in 0 seconds
+2018-02-26 09:48:25,819 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000129-0000000000000000131 expecting start txid #129
+2018-02-26 09:48:25,819 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000129-0000000000000000131
+2018-02-26 09:48:25,819 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000129-0000000000000000131 of size 113 edits # 3 loaded in 0 seconds
+2018-02-26 09:48:25,865 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 125
+2018-02-26 09:48:25,866 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000123, cpktTxId=0000000000000000123)
+2018-02-26 09:48:25,953 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 131 to namenode at http://singlenode:50070 in 0.076 seconds
+2018-02-26 09:48:25,954 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1561
+2018-02-26 09:52:52,506 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2018-02-26 09:52:52,507 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ustc-OptiPlex-7050/127.0.1.1
+************************************************************/
+2018-02-26 09:53:10,226 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ustc-OptiPlex-7050/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.7.2
+STARTUP_MSG:   classpath = /opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-client-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-auth-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-framework-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r b165c4fe8a74265c792ce23f546c64604acf0e41; compiled by 'jenkins' on 2016-01-26T00:08Z
+STARTUP_MSG:   java = 1.8.0_161
+************************************************************/
+2018-02-26 09:53:10,230 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2018-02-26 09:53:10,490 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2018-02-26 09:53:10,524 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2018-02-26 09:53:10,524 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: SecondaryNameNode metrics system started
+2018-02-26 09:53:10,660 INFO org.apache.hadoop.hdfs.server.common.Storage: Lock on /opt/hadoop-2.7.2/tmp/dfs/namesecondary/in_use.lock acquired by nodename 10144@ustc-OptiPlex-7050
+2018-02-26 09:53:10,685 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2018-02-26 09:53:10,685 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair:true
+2018-02-26 09:53:10,710 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+2018-02-26 09:53:10,710 INFO org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2018-02-26 09:53:10,711 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2018-02-26 09:53:10,712 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: The block deletion will start around 2018 二月 26 09:53:10
+2018-02-26 09:53:10,713 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2018-02-26 09:53:10,713 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-26 09:53:10,714 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2018-02-26 09:53:10,714 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2018-02-26 09:53:10,724 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: dfs.block.access.token.enable=false
+2018-02-26 09:53:10,725 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: defaultReplication         = 1
+2018-02-26 09:53:10,725 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplication             = 512
+2018-02-26 09:53:10,725 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: minReplication             = 1
+2018-02-26 09:53:10,725 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxReplicationStreams      = 2
+2018-02-26 09:53:10,725 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: replicationRecheckInterval = 3000
+2018-02-26 09:53:10,725 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: encryptDataTransfer        = false
+2018-02-26 09:53:10,725 INFO org.apache.hadoop.hdfs.server.blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2018-02-26 09:53:10,726 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = root (auth:SIMPLE)
+2018-02-26 09:53:10,726 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = supergroup
+2018-02-26 09:53:10,726 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2018-02-26 09:53:10,726 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2018-02-26 09:53:10,727 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2018-02-26 09:53:10,841 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2018-02-26 09:53:10,841 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-26 09:53:10,841 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2018-02-26 09:53:10,842 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2018-02-26 09:53:10,842 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: ACLs enabled? false
+2018-02-26 09:53:10,842 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: XAttrs enabled? true
+2018-02-26 09:53:10,842 INFO org.apache.hadoop.hdfs.server.namenode.FSDirectory: Maximum size of an xattr: 16384
+2018-02-26 09:53:10,842 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times
+2018-02-26 09:53:10,846 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2018-02-26 09:53:10,846 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2018-02-26 09:53:10,846 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2018-02-26 09:53:10,846 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2018-02-26 09:53:10,856 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2018-02-26 09:53:10,856 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2018-02-26 09:53:10,856 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2018-02-26 09:53:10,858 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2018-02-26 09:53:10,858 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2018-02-26 09:53:10,858 INFO org.apache.hadoop.hdfs.server.namenode.top.metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2018-02-26 09:53:10,865 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for secondary at: http://0.0.0.0:50090
+2018-02-26 09:53:10,901 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2018-02-26 09:53:10,905 INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2018-02-26 09:53:10,907 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.secondary is not defined
+2018-02-26 09:53:10,910 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2018-02-26 09:53:10,911 WARN org.apache.hadoop.http.lib.StaticUserWebFilter: dfs.web.ugi should not be used. Instead, use hadoop.http.staticuser.user.
+2018-02-26 09:53:10,911 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context secondary
+2018-02-26 09:53:10,911 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2018-02-26 09:53:10,911 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2018-02-26 09:53:10,918 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50090
+2018-02-26 09:53:10,918 INFO org.mortbay.log: jetty-6.1.26
+2018-02-26 09:53:10,981 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50090
+2018-02-26 09:53:10,981 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Web server init done
+2018-02-26 09:53:10,987 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint Period   :3600 secs (60 min)
+2018-02-26 09:53:10,987 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Log Size Trigger    :1000000 txns
+2018-02-26 09:54:11,269 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has changed. Downloading updated image from NN.
+2018-02-26 09:54:11,320 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getimage=1&txid=131&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-26 09:54:11,340 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Image Transfer timeout configured to 60000 milliseconds
+2018-02-26 09:54:11,429 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.03s at 30.30 KB/s
+2018-02-26 09:54:11,429 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000131 size 1561 bytes.
+2018-02-26 09:54:11,463 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=132&endTxId=133&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-26 09:54:11,529 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.06s at 16253.97 KB/s
+2018-02-26 09:54:11,529 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000132-0000000000000000133_0000000000005000508 size 0 bytes.
+2018-02-26 09:54:11,530 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=134&endTxId=137&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-26 09:54:11,563 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.03s at 0.00 KB/s
+2018-02-26 09:54:11,563 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000134-0000000000000000137_0000000000005000575 size 0 bytes.
+2018-02-26 09:54:11,601 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatPBINode: Loading 17 INodes.
+2018-02-26 09:54:11,621 INFO org.apache.hadoop.hdfs.server.namenode.FSImageFormatProtobuf: Loaded FSImage in 0 seconds.
+2018-02-26 09:54:11,621 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Loaded image for txid 131 from /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000131
+2018-02-26 09:54:11,621 INFO org.apache.hadoop.hdfs.server.namenode.NameCache: initialized with 0 entries 0 lookups
+2018-02-26 09:54:11,624 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 2 stream(s).
+2018-02-26 09:54:11,627 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000132-0000000000000000133 expecting start txid #132
+2018-02-26 09:54:11,627 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000132-0000000000000000133
+2018-02-26 09:54:11,643 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000132-0000000000000000133 of size 1048576 edits # 2 loaded in 0 seconds
+2018-02-26 09:54:11,643 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000134-0000000000000000137 expecting start txid #134
+2018-02-26 09:54:11,643 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000134-0000000000000000137
+2018-02-26 09:54:11,647 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000134-0000000000000000137 of size 151 edits # 4 loaded in 0 seconds
+2018-02-26 09:54:11,708 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 131
+2018-02-26 09:54:11,708 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000125, cpktTxId=0000000000000000125)
+2018-02-26 09:54:11,806 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 137 to namenode at http://singlenode:50070 in 0.08 seconds
+2018-02-26 09:54:11,807 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1505
+2018-02-26 10:54:12,509 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-26 10:54:12,509 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=138&endTxId=139&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-26 10:54:12,546 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.03s at 0.00 KB/s
+2018-02-26 10:54:12,546 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000138-0000000000000000139_0000000000008601554 size 0 bytes.
+2018-02-26 10:54:12,547 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-26 10:54:12,547 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000138-0000000000000000139 expecting start txid #138
+2018-02-26 10:54:12,547 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000138-0000000000000000139
+2018-02-26 10:54:12,547 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000138-0000000000000000139 of size 42 edits # 2 loaded in 0 seconds
+2018-02-26 10:54:12,588 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 137
+2018-02-26 10:54:12,589 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000131, cpktTxId=0000000000000000131)
+2018-02-26 10:54:12,678 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 139 to namenode at http://singlenode:50070 in 0.077 seconds
+2018-02-26 10:54:12,678 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1505
+2018-02-26 16:10:02,299 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-26 16:10:02,300 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=140&endTxId=141&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-26 16:10:02,339 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.04s at 0.00 KB/s
+2018-02-26 16:10:02,339 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000140-0000000000000000141_0000000000012202114 size 0 bytes.
+2018-02-26 16:10:02,339 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-26 16:10:02,340 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000140-0000000000000000141 expecting start txid #140
+2018-02-26 16:10:02,340 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000140-0000000000000000141
+2018-02-26 16:10:02,340 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000140-0000000000000000141 of size 42 edits # 2 loaded in 0 seconds
+2018-02-26 16:10:02,373 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 139
+2018-02-26 16:10:02,373 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000137, cpktTxId=0000000000000000137)
+2018-02-26 16:10:02,459 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 141 to namenode at http://singlenode:50070 in 0.074 seconds
+2018-02-26 16:10:02,460 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1505
+2018-02-26 17:10:03,223 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-26 17:10:03,224 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=142&endTxId=143&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-26 17:10:03,275 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.05s at 0.00 KB/s
+2018-02-26 17:10:03,275 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000142-0000000000000000143_0000000000015803039 size 0 bytes.
+2018-02-26 17:10:03,275 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-26 17:10:03,275 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000142-0000000000000000143 expecting start txid #142
+2018-02-26 17:10:03,276 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000142-0000000000000000143
+2018-02-26 17:10:03,276 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000142-0000000000000000143 of size 42 edits # 2 loaded in 0 seconds
+2018-02-26 17:10:03,368 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 141
+2018-02-26 17:10:03,368 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000139, cpktTxId=0000000000000000139)
+2018-02-26 17:10:03,623 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 143 to namenode at http://singlenode:50070 in 0.238 seconds
+2018-02-26 17:10:03,623 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1505
+2018-02-27 08:45:17,816 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 08:45:17,816 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=144&endTxId=145&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 08:45:17,847 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.03s at 0.00 KB/s
+2018-02-27 08:45:17,848 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file edits_tmp_0000000000000000144-0000000000000000145_0000000000019406587 size 0 bytes.
+2018-02-27 08:45:17,848 INFO org.apache.hadoop.hdfs.server.namenode.Checkpointer: Checkpointer about to load edits from 1 stream(s).
+2018-02-27 08:45:17,848 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Reading /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000144-0000000000000000145 expecting start txid #144
+2018-02-27 08:45:17,848 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Start loading edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000144-0000000000000000145
+2018-02-27 08:45:17,848 INFO org.apache.hadoop.hdfs.server.namenode.FSImage: Edits file /opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/edits_0000000000000000144-0000000000000000145 of size 42 edits # 2 loaded in 0 seconds
+2018-02-27 08:45:17,881 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 143
+2018-02-27 08:45:17,882 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000141, cpktTxId=0000000000000000141)
+2018-02-27 08:45:17,968 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 145 to namenode at http://singlenode:50070 in 0.076 seconds
+2018-02-27 08:45:17,968 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 1505
+2018-02-27 09:45:18,279 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 09:45:18,280 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=146&endTxId=147&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 09:45:18,485 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.net.UnknownHostException: singlenode
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.doGetUrl(TransferFsImage.java:412)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.getFileClient(TransferFsImage.java:397)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.downloadEditsToStorage(TransferFsImage.java:167)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:465)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:444)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.downloadCheckpointFiles(SecondaryNameNode.java:443)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:540)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-27 09:46:18,603 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 09:46:18,604 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=146&endTxId=147&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 09:46:18,806 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.net.UnknownHostException: singlenode
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.doGetUrl(TransferFsImage.java:412)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.getFileClient(TransferFsImage.java:397)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.downloadEditsToStorage(TransferFsImage.java:167)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:465)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:444)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.downloadCheckpointFiles(SecondaryNameNode.java:443)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:540)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-27 09:47:18,931 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 09:47:18,932 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=146&endTxId=147&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 09:47:19,126 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.net.UnknownHostException: singlenode
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.doGetUrl(TransferFsImage.java:412)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.getFileClient(TransferFsImage.java:397)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.downloadEditsToStorage(TransferFsImage.java:167)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:465)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:444)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.downloadCheckpointFiles(SecondaryNameNode.java:443)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:540)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-27 09:48:19,253 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 09:48:19,254 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=146&endTxId=147&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 09:48:19,292 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.net.UnknownHostException: singlenode
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.doGetUrl(TransferFsImage.java:412)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.getFileClient(TransferFsImage.java:397)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.downloadEditsToStorage(TransferFsImage.java:167)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:465)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:444)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.downloadCheckpointFiles(SecondaryNameNode.java:443)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:540)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-27 09:49:20,008 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 09:49:20,008 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=146&endTxId=147&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 09:49:20,023 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.net.UnknownHostException: singlenode
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.doGetUrl(TransferFsImage.java:412)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.getFileClient(TransferFsImage.java:397)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.downloadEditsToStorage(TransferFsImage.java:167)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:465)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:444)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.downloadCheckpointFiles(SecondaryNameNode.java:443)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:540)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-27 09:50:20,149 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 09:50:20,149 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=146&endTxId=147&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 09:50:20,171 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.net.UnknownHostException: singlenode
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.doGetUrl(TransferFsImage.java:412)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.getFileClient(TransferFsImage.java:397)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.downloadEditsToStorage(TransferFsImage.java:167)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:465)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:444)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.downloadCheckpointFiles(SecondaryNameNode.java:443)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:540)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-27 09:51:20,302 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 09:51:20,303 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=146&endTxId=147&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 09:51:20,317 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.net.UnknownHostException: singlenode
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.doGetUrl(TransferFsImage.java:412)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.getFileClient(TransferFsImage.java:397)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.downloadEditsToStorage(TransferFsImage.java:167)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:465)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:444)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.downloadCheckpointFiles(SecondaryNameNode.java:443)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:540)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-27 09:52:20,439 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 09:52:20,439 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=146&endTxId=147&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 09:52:20,455 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.net.UnknownHostException: singlenode
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.doGetUrl(TransferFsImage.java:412)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.getFileClient(TransferFsImage.java:397)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.downloadEditsToStorage(TransferFsImage.java:167)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:465)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:444)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.downloadCheckpointFiles(SecondaryNameNode.java:443)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:540)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-27 09:53:20,581 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 09:53:20,581 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=146&endTxId=147&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 09:53:20,602 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.net.UnknownHostException: singlenode
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.doGetUrl(TransferFsImage.java:412)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.getFileClient(TransferFsImage.java:397)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.downloadEditsToStorage(TransferFsImage.java:167)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:465)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:444)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.downloadCheckpointFiles(SecondaryNameNode.java:443)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:540)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-27 09:54:20,713 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 09:54:20,713 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=146&endTxId=147&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 09:54:20,728 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.net.UnknownHostException: singlenode
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.doGetUrl(TransferFsImage.java:412)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.getFileClient(TransferFsImage.java:397)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.downloadEditsToStorage(TransferFsImage.java:167)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:465)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:444)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.downloadCheckpointFiles(SecondaryNameNode.java:443)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:540)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-27 09:55:20,847 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Image has not changed. Will not download image.
+2018-02-27 09:55:20,848 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Opening connection to http://singlenode:50070/imagetransfer?getedit=1&startTxId=146&endTxId=147&storageInfo=-63:1241959792:0:CID-cf41cb9b-2b1f-4312-afc9-7b624b223979
+2018-02-27 09:55:20,862 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.net.UnknownHostException: singlenode
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.doGetUrl(TransferFsImage.java:412)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.getFileClient(TransferFsImage.java:397)
+	at org.apache.hadoop.hdfs.server.namenode.TransferFsImage.downloadEditsToStorage(TransferFsImage.java:167)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:465)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$2.run(SecondaryNameNode.java:444)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.downloadCheckpointFiles(SecondaryNameNode.java:443)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doCheckpoint(SecondaryNameNode.java:540)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:395)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+2018-02-27 09:56:20,879 WARN org.apache.hadoop.ipc.Client: Address change detected. Old: singlenode/192.168.1.157:9000 New: singlenode:9000
+2018-02-27 09:56:21,881 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: singlenode:9000. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2018-02-27 09:56:21,884 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Exception in doCheckpoint
+java.io.IOException: Failed on local exception: java.io.IOException: Couldn't set up IO streams; Host Details : local host is: "ustc-OptiPlex-7050/127.0.1.1"; destination host is: "singlenode":9000; 
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:773)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1479)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1412)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:229)
+	at com.sun.proxy.$Proxy10.getTransactionId(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.NamenodeProtocolTranslatorPB.getTransactionID(NamenodeProtocolTranslatorPB.java:128)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:191)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy11.getTransactionID(Unknown Source)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.countUncheckpointedTxns(SecondaryNameNode.java:641)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.shouldCheckpointBasedOnCount(SecondaryNameNode.java:649)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork(SecondaryNameNode.java:393)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode$1.run(SecondaryNameNode.java:361)
+	at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:415)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.run(SecondaryNameNode.java:357)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Couldn't set up IO streams
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:793)
+	at org.apache.hadoop.ipc.Client$Connection.access$2900(Client.java:375)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1528)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1451)
+	... 17 more
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:192)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:495)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:614)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:712)
+	... 20 more
+2018-02-27 09:56:28,595 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2018-02-27 09:56:28,596 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ustc-OptiPlex-7050/127.0.1.1
+************************************************************/
+2018-02-27 09:56:46,231 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ustc-OptiPlex-7050/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 2.7.2
+STARTUP_MSG:   classpath = /opt/hadoop-2.7.2/etc/hadoop:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-client-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/hadoop-auth-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/curator-framework-2.7.1.jar:/opt/hadoop-2.7.2/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/common/hadoop-common-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar:/opt/hadoop-2.7.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar:/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r b165c4fe8a74265c792ce23f546c64604acf0e41; compiled by 'jenkins' on 2016-01-26T00:08Z
+STARTUP_MSG:   java = 1.8.0_161
+************************************************************/
+2018-02-27 09:56:46,236 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2018-02-27 09:56:46,496 FATAL org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Failed to start secondary namenode
+java.io.IOException: Running in secure mode, but config doesn't have a keytab
+	at org.apache.hadoop.security.SecurityUtil.login(SecurityUtil.java:239)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.initialize(SecondaryNameNode.java:217)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.<init>(SecondaryNameNode.java:192)
+	at org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.main(SecondaryNameNode.java:671)
+2018-02-27 09:56:46,498 INFO org.apache.hadoop.util.ExitUtil: Exiting with status 1
+2018-02-27 09:56:46,499 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ustc-OptiPlex-7050/127.0.1.1
+************************************************************/

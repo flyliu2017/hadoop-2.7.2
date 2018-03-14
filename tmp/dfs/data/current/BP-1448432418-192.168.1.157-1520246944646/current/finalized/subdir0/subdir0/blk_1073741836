@@ -1,0 +1,1 @@
+YjobId=job_1520997149275_0003,submitTime=1520998987945,launchTime=1520998998854,firstMapTaskLaunchTime=1520999002153,firstReduceTaskLaunchTime=1520999012189,finishTime=1520999040300,resourcesPerMap=1024,resourcesPerReduce=1024,numMaps=1,numReduces=1,user=hdfs,queue=default,status=FAILED,mapSlotSeconds=14,reduceSlotSeconds=19,jobName=grep-search

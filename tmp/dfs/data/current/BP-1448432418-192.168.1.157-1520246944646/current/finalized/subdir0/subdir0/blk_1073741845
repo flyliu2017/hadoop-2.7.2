@@ -1,0 +1,1 @@
+IjobId=job_1520997149275_0004,submitTime=1520999044799,launchTime=1520999053174,firstMapTaskLaunchTime=0,firstReduceTaskLaunchTime=1520999056408,finishTime=1520999058746,resourcesPerMap=0,resourcesPerReduce=1024,numMaps=0,numReduces=1,user=hdfs,queue=default,status=SUCCEEDED,mapSlotSeconds=0,reduceSlotSeconds=1,jobName=grep-sort
