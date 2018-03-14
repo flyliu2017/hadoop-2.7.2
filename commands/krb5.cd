@@ -1,0 +1,3 @@
+service krb5-kdc restart
+
+service krb5-admin-server restart

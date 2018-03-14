@@ -10891,3 +10891,14 @@ The reported blocks 7 has reached the threshold 0.9990 of total blocks 7. The nu
 2018-03-14 19:33:52,402 INFO org.apache.hadoop.hdfs.StateChange: STATE* Safe mode is OFF
 2018-03-14 19:33:52,403 INFO org.apache.hadoop.hdfs.StateChange: STATE* Network topology has 1 racks and 1 datanodes
 2018-03-14 19:33:52,403 INFO org.apache.hadoop.hdfs.StateChange: STATE* UnderReplicatedBlocks has 0 blocks
+2018-03-14 20:27:26,544 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 192.168.1.117
+2018-03-14 20:27:26,544 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2018-03-14 20:27:26,545 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 472
+2018-03-14 20:27:26,545 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 58 
+2018-03-14 20:27:26,558 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 71 
+2018-03-14 20:27:26,560 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /opt/hadoop-2.7.2/tmp/dfs/name/current/edits_inprogress_0000000000000000472 -> /opt/hadoop-2.7.2/tmp/dfs/name/current/edits_0000000000000000472-0000000000000000473
+2018-03-14 20:27:26,560 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 474
+2018-03-14 20:27:27,189 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.05s at 66.67 KB/s
+2018-03-14 20:27:27,189 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000473 size 3434 bytes.
+2018-03-14 20:27:27,215 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 470
+2018-03-14 20:27:27,215 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/name/current/fsimage_0000000000000000462, cpktTxId=0000000000000000462)

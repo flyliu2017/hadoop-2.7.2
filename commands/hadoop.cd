@@ -1,0 +1,40 @@
+./start-secure-dns.sh
+
+./stop-secure-dns.sh
+
+kinit -kt /root/hadoop.keytab HTTP/singlenode.ustc.edu
+
+ kinit -kt /etc/security/keytab/spnego.service.keytab HTTP/singlenode.ustc.edu
+
+ kinit -kt /etc/security/keytab/nn.service.keytab nn/singlenode.ustc.edu
+
+kinit -kt /root/hadoop1.keytab HTTP/ustc
+
+curl -i "http://singlenode.ustc.edu:50070/webhdfs/v1/?op=LISTSTATUS"
+
+curl -i -X DELETE "http://singlenode.ustc.edu:50070/webhdfs/v1/test/aaa?op=DELETE&user.name=root"
+
+curl -i -X PUT "http://singlenode.ustc.edu:50070/webhdfs/v1/aaa?op=CREATE&user.name=root"
+
+curl -i -X PUT -T /aaa -H "Content-Type:application/octet-stream" "http://singlenode.ustc.edu:50075/webhdfs/v1/aaa?op=CREATE&user.name=root&namenoderpcaddress=singlenode.ustc.edu:9000&overwrite=false" 
+
+curl -i --negotiate -u : "http://singlenode.ustc.edu:50070/"
+
+curl -i --negotiate -u : "http://resourcemanager.ustc.edu:8088/cluster"
+
+curl -i --negotiate -u : "http://singlenode.ustc.edu:50070/webhdfs/v1/?op=LISTSTATUS"
+
+curl -i --negotiate -u : -X DELETE "http://singlenode.ustc.edu:50070/webhdfs/v1/test/aaa?op=DELETE"
+
+curl -i --negotiate -u : -X PUT "http://singlenode.ustc.edu:50070/webhdfs/v1/aaa?op=CREATE"
+
+curl -i --negotiate -u : -X PUT -T /aaa -H "Content-Type:application/octet-stream"
+
+python pai-fs.py --config host=192.168.1.157 port=50070
+
+python pai-fs.py --config host=singlenode.ustc.edu port=50070   
+
+python pai-fs.py -ls hdfs://
+
+
+      "command": "pip --quiet install scipy && python code/tf_cnn_benchmarks.py --local_parameter_device=cpu --num_gpus=4 --batch_size=32 --model=resnet20 --variable_update=parameter_server --data_dir=$PAI_DATA_DIR --data_name=cifar10 --train_dir=$PAI_OUTPUT_DIR --ps_hosts=$PAI_TASK_ROLE_ps_server_HOST_LIST --worker_hosts=$PAI_TASK_ROLE_worker_HOST_LIST --job_name=ps --task_index=$PAI_CURRENT_TASK_ROLE_CURRENT_TASK_INDEX"

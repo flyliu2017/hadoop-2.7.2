@@ -1,0 +1,7 @@
+ docker run -it -h resourcemanager --add-host=singlenode.ustc.edu:192.168.1.157  flyliu/ubuntu-ssh-hadoop-krb5 /bin/bash
+
+ docker run -it -h resourcemanager --add-host="resourcemanager.ustc.edu resourcemanager:172.17.0.2"  --add-host=singlenode.ustc.edu:192.168.3.60 flyliu/ubuntu-ssh-hadoop-krb5 /bin/bash
+
+docker run -it -h resourcemanager --add-host="resourcemanager.ustc.edu resourcemanager:172.17.0.2"  --add-host=singlenode.ustc.edu:192.168.3.60 flyliu/ubuntu-ssh-hadoop-krb5:fix_krb5_conf sh -c "service ssh start && /bin/bash"
+
+docker rm $(docker ps -a -q)

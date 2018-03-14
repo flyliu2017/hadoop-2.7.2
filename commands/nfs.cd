@@ -1,0 +1,10 @@
+service nfs-kernel-server stop
+service rpcbind stop
+
+$HADOOP_PREFIX/sbin/hadoop-daemon.sh --script $HADOOP_PREFIX/bin/hdfs start portmap
+
+$HADOOP_PREFIX/sbin/hadoop-daemon.sh --script $HADOOP_PREFIX/bin/hdfs start nfs3
+rpcinfo -p $nfs_server_ip
+showmount -e $nfs_server_ip
+
+mount -t nfs -o vers=3,proto=tcp,nolock,noacl,sync 192.168.3.60:/  /opt/hadoop-2.7.2/mount-nfs/
