@@ -6680,3 +6680,8 @@ STARTUP_MSG:   java = 1.8.0_161
 2018-03-14 20:27:27,107 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/namesecondary/current/fsimage_0000000000000000462, cpktTxId=0000000000000000462)
 2018-03-14 20:27:27,220 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Uploaded image with txid 473 to namenode at http://singlenode.ustc.edu:50070 in 0.084 seconds
 2018-03-14 20:27:27,220 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 3434
+2018-03-14 21:15:00,196 ERROR org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: RECEIVED SIGNAL 15: SIGTERM
+2018-03-14 21:15:00,204 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at singlenode.ustc.edu/192.168.1.117
+************************************************************/

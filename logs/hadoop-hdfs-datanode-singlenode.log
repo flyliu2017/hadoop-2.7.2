@@ -10039,3 +10039,8 @@ STARTUP_MSG:   java = 1.8.0_161
 2018-03-14 19:33:22,372 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Acknowledging ACTIVE Namenode Block pool BP-1448432418-192.168.1.157-1520246944646 (Datanode Uuid af4b979c-4b9d-4498-939e-82c59862cb73) service to singlenode.ustc.edu/192.168.1.117:9000
 2018-03-14 19:33:22,411 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Successfully sent block report 0x5c238426ca,  containing 1 storage report(s), of which we sent 1. The reports had 7 total blocks and used 1 RPC(s). This took 2 msec to generate and 37 msecs for RPC and NN processing. Got back one command: FinalizeCommand/5.
 2018-03-14 19:33:22,411 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Got finalize command for block pool BP-1448432418-192.168.1.157-1520246944646
+2018-03-14 21:15:00,202 ERROR org.apache.hadoop.hdfs.server.datanode.DataNode: RECEIVED SIGNAL 15: SIGTERM
+2018-03-14 21:15:00,207 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at singlenode.ustc.edu/192.168.1.117
+************************************************************/

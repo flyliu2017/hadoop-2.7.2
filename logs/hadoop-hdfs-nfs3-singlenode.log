@@ -2755,3 +2755,12 @@ STARTUP_MSG:   java = 1.8.0_161
 2018-03-14 19:34:06,007 INFO org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50079
 2018-03-14 19:34:06,035 INFO org.apache.hadoop.oncrpc.SimpleTcpServer: Started listening to TCP requests at port 2049 for Rpc program: NFS3 at localhost:2049 with workerCount 0
 2018-03-14 19:34:49,914 INFO org.apache.hadoop.hdfs.nfs.mount.RpcProgramMountd: Giving handle (fileId:16385) to client for export /
+2018-03-14 21:15:00,236 ERROR org.apache.hadoop.nfs.nfs3.Nfs3Base: RECEIVED SIGNAL 15: SIGTERM
+2018-03-14 21:15:00,240 INFO org.apache.hadoop.hdfs.nfs.nfs3.AsyncDataService: Shutting down all async data service threads...
+2018-03-14 21:15:00,240 INFO org.apache.hadoop.hdfs.nfs.nfs3.AsyncDataService: All async data service threads have been shut down
+2018-03-14 21:15:00,240 INFO org.apache.hadoop.hdfs.nfs.nfs3.OpenFileCtxCache: StreamMonitor got interrupted
+2018-03-14 21:15:00,246 INFO org.mortbay.log: Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:50079
+2018-03-14 21:15:00,253 INFO org.apache.hadoop.nfs.nfs3.Nfs3Base: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down Nfs3 at singlenode.ustc.edu/192.168.1.117
+************************************************************/

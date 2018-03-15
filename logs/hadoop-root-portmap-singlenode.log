@@ -232,3 +232,8 @@ STARTUP_MSG:   java = 1.8.0_161
 ************************************************************/
 2018-03-14 19:33:58,189 INFO org.apache.hadoop.portmap.Portmap: registered UNIX signal handlers for [TERM, HUP, INT]
 2018-03-14 19:33:58,309 INFO org.apache.hadoop.portmap.Portmap: Portmap server started at tcp:///0.0.0.0:111, udp:///0.0.0.0:111
+2018-03-14 21:15:00,234 ERROR org.apache.hadoop.portmap.Portmap: RECEIVED SIGNAL 15: SIGTERM
+2018-03-14 21:15:00,257 INFO org.apache.hadoop.portmap.Portmap: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down Portmap at singlenode.ustc.edu/192.168.1.117
+************************************************************/

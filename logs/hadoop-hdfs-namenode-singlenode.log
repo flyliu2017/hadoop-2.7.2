@@ -10902,3 +10902,8 @@ The reported blocks 7 has reached the threshold 0.9990 of total blocks 7. The nu
 2018-03-14 20:27:27,189 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000473 size 3434 bytes.
 2018-03-14 20:27:27,215 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 470
 2018-03-14 20:27:27,215 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/opt/hadoop-2.7.2/tmp/dfs/name/current/fsimage_0000000000000000462, cpktTxId=0000000000000000462)
+2018-03-14 21:15:00,213 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: RECEIVED SIGNAL 15: SIGTERM
+2018-03-14 21:15:00,223 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at singlenode.ustc.edu/192.168.1.117
+************************************************************/
