@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64acc1e1-71f4-4795-8d57-55e9f2ec74f4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.log" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-namenode-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-namenode-singlenode.log" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-nfs3-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-nfs3-singlenode.log" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-secondarynamenode-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-secondarynamenode-singlenode.log" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-portmap-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-root-portmap-singlenode.log" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/data/current/BP-1448432418-192.168.1.157-1520246944646/current/dfsUsed" afterPath="$PROJECT_DIR$/tmp/dfs/data/current/BP-1448432418-192.168.1.157-1520246944646/current/dfsUsed" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/data/in_use.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/name/in_use.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/namesecondary/in_use.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Hadoop部署经验总结.docx" afterPath="$PROJECT_DIR$/Hadoop部署经验总结.docx" />
+      <change beforePath="$PROJECT_DIR$/etc/hadoop/mapred-site.xml" afterPath="$PROJECT_DIR$/etc/hadoop/mapred-site.xml" />
+      <change beforePath="$PROJECT_DIR$/etc/hadoop/yarn-site.xml" afterPath="$PROJECT_DIR$/etc/hadoop/yarn-site.xml" />
+      <change beforePath="$PROJECT_DIR$/nfs-krb5-config/core-site.xml" afterPath="$PROJECT_DIR$/nfs-krb5-config/core-site.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +20,7 @@
       <file leaf-file-name="hadoop-env.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/etc/hadoop/hadoop-env.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="0">
               <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
@@ -35,7 +31,17 @@
         <entry file="file://$PROJECT_DIR$/etc/hadoop/hdfs-site.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="522">
-              <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+              <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hdfs-site.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nfs-krb5-config/hdfs-site.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -44,27 +50,27 @@
       <file leaf-file-name="yarn-site.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/etc/hadoop/yarn-site.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
+            <state relative-caret-position="540">
               <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapred-site.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mapred-site.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/etc/hadoop/mapred-site.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="501">
+              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapred-default.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mapred-default.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/share/doc/hadoop/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="394">
               <caret line="1584" column="41" lean-forward="false" selection-start-line="1584" selection-start-column="8" selection-end-line="1584" selection-end-column="41" />
               <folding />
             </state>
@@ -75,7 +81,17 @@
         <entry file="file://$PROJECT_DIR$/etc/hadoop/core-site.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="159">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core-site.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nfs-krb5-config/core-site.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="108" column="35" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,19 +156,21 @@
         <option value="$PROJECT_DIR$/test" />
         <option value="$PROJECT_DIR$/test.sh" />
         <option value="$PROJECT_DIR$/princ" />
-        <option value="$PROJECT_DIR$/etc/hadoop/yarn-site.xml" />
         <option value="$PROJECT_DIR$/gen-krb5-princ.sh" />
         <option value="$PROJECT_DIR$/princ-gen.sh" />
         <option value="$PROJECT_DIR$/core-site.xml" />
         <option value="$PROJECT_DIR$/etc/hadoop/core-site.xml" />
         <option value="$PROJECT_DIR$/etc/hadoop/hdfs-site.xml" />
         <option value="$PROJECT_DIR$/etc/hadoop/hadoop-env.sh" />
+        <option value="$PROJECT_DIR$/nfs-krb5-config/core-site.xml" />
+        <option value="$PROJECT_DIR$/etc/hadoop/yarn-site.xml" />
+        <option value="$PROJECT_DIR$/etc/hadoop/mapred-site.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2297" />
-    <option name="y" value="163" />
+    <option name="x" value="2115" />
+    <option name="y" value="152" />
     <option name="width" value="1585" />
     <option name="height" value="906" />
   </component>
@@ -172,6 +190,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,8 +219,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,7 +286,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2297" y="163" width="1585" height="906" extended-state="0" />
+    <frame x="2115" y="152" width="1585" height="906" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29211357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -614,32 +632,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nfs-krb5-config/hdfs-site.xml">
+    <entry file="file://$PROJECT_DIR$/etc/hadoop/hadoop-env.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nfs-krb5-config/core-site.xml">
+    <entry file="file://$PROJECT_DIR$/share/doc/hadoop/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="189" column="34" lean-forward="true" selection-start-line="189" selection-start-column="34" selection-end-line="189" selection-end-column="34" />
+        <state relative-caret-position="394">
+          <caret line="1584" column="41" lean-forward="false" selection-start-line="1584" selection-start-column="8" selection-end-line="1584" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/etc/core-site.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etc/hadoop/hadoop-env.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="1916">
+          <caret line="117" column="28" lean-forward="true" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -647,7 +659,15 @@
     <entry file="file://$PROJECT_DIR$/etc/hadoop/core-site.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs-krb5-config/core-site.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="108" column="35" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -655,14 +675,22 @@
     <entry file="file://$PROJECT_DIR$/etc/hadoop/hdfs-site.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
-          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs-krb5-config/hdfs-site.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/etc/hadoop/yarn-site.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
+        <state relative-caret-position="540">
           <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
@@ -670,16 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/etc/hadoop/mapred-site.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/doc/hadoop/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="1584" column="41" lean-forward="false" selection-start-line="1584" selection-start-column="8" selection-end-line="1584" selection-end-column="41" />
+        <state relative-caret-position="501">
+          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding />
         </state>
       </provider>

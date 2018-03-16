@@ -106,11 +106,9 @@
         <name>hadoop.security.auth_to_local</name>
         <value>
             RULE:[2:$1@$0]([snjd]n@SINGLENODE.COM)s/.*/hdfs/
+            RULE:[2:$1@$0](hdfs@SINGLENODE.COM)s/.*/hdfs/
             RULE:[2:$1@$0](HTTP@SINGLENODE.COM)s/.*/http/
-            RULE:[2:$1@$0](nm@SINGLENODE.COM)s/.*/yarn/
-            RULE:[2:$1@$0](rm@SINGLENODE.COM)s/.*/yarn/
-            RULE:[2:$1@$0](jhs@SINGLENODE.COM)s/.*/mapred/
-            RULE:[2:$1@$0](jhs@SINGLENODE.COM)s/.*/mapred/
+            RULE:[2:$1@$0]([rn]m@SINGLENODE.COM)s/.*/yarn/
             RULE:[2:$1@$0](jhs@SINGLENODE.COM)s/.*/mapred/
             RULE:[1:$1@$0](^hue@.*$)s/^.*$/nobody/
             RULE:[1:$1@$0](^sentry@.*$)s/^.*$/nobody/

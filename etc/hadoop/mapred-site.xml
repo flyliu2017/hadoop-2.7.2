@@ -21,4 +21,24 @@
         <name>mapreduce.framework.name</name>
         <value>yarn</value>
     </property>
+
+    <property>
+        <name>mapreduce.jobhistory.keytab</name>
+        <value>/etc/security/keytab/jhs.service.keytab</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobhistory.principal</name>
+        <value>jhs/_HOST@SINGLENODE.COM</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobhistory.webapp.spnego-keytab-file</name>
+        <value>/etc/security/keytab/spnego.service.keytab</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobhistory.webapp.spnego-principal</name>
+        <value>HTTP/_HOST@SINGLENODE.COM</value>
+    </property>
 </configuration>

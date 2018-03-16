@@ -29,7 +29,7 @@
     <property>
         <description>The Kerberos principal for the resource manager.</description>
         <name>yarn.resourcemanager.principal</name>
-        <value>rm/resourcemanager.ustc.edu@SINGLENODE.COM</value>
+        <value>rm/_HOST@SINGLENODE.COM</value>
     </property>
 
     <property>
@@ -41,7 +41,7 @@
     <property>
         <description>The kerberos principal for the node manager.</description>
         <name>yarn.nodemanager.principal</name>
-        <value>nm/resourcemanager.ustc.edu@SINGLENODE.COM</value>
+        <value>nm/_HOST@SINGLENODE.COM</value>
     </property>
 
     <property>
