@@ -29,7 +29,7 @@
 
     <property>
         <name>dfs.web.authentication.kerberos.principal</name>
-        <value>HTTP/singlenode.ustc.edu@SINGLENODE.COM</value>
+        <value>HTTP/_HOST@SINGLENODE.COM</value>
     </property>
 
     <property>
