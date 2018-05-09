@@ -1,0 +1,1 @@
+ujobId=job_1525231805777_0003,submitTime=1525232323152,launchTime=1525232326181,firstMapTaskLaunchTime=1525232329370,firstReduceTaskLaunchTime=0,finishTime=1525232332461,resourcesPerMap=1024,resourcesPerReduce=0,numMaps=1,numReduces=0,user=hdfs,queue=default,status=SUCCEEDED,mapSlotSeconds=2,reduceSlotSeconds=0,jobName=insert overwrite local directory '/r...first(Stage-1)

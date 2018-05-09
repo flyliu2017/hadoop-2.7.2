@@ -3,35 +3,40 @@
   <component name="ChangeListManager">
     <list default="true" id="64acc1e1-71f4-4795-8d57-55e9f2ec74f4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Hadoop部署经验总结.docx" afterPath="$PROJECT_DIR$/Hadoop部署经验总结.docx" />
+      <change beforePath="$PROJECT_DIR$/etc/hadoop/core-site.xml" afterPath="$PROJECT_DIR$/etc/hadoop/core-site.xml" />
+      <change beforePath="$PROJECT_DIR$/etc/hadoop/hadoop-env.sh" afterPath="$PROJECT_DIR$/etc/hadoop/hadoop-env.sh" />
+      <change beforePath="$PROJECT_DIR$/etc/hadoop/hdfs-site.xml" afterPath="$PROJECT_DIR$/etc/hadoop/hdfs-site.xml" />
+      <change beforePath="$PROJECT_DIR$/etc/hadoop/slaves" afterPath="$PROJECT_DIR$/etc/hadoop/slaves" />
+      <change beforePath="$PROJECT_DIR$/logs/SecurityAuth-hdfs.audit" afterPath="$PROJECT_DIR$/logs/SecurityAuth-hdfs.audit" />
+      <change beforePath="$PROJECT_DIR$/logs/SecurityAuth-root.audit" afterPath="$PROJECT_DIR$/logs/SecurityAuth-root.audit" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.log" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.out" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.out" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.out.1" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.out.1" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.out.4" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.out.4" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.out.5" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-datanode-singlenode.out.5" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-namenode-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-namenode-singlenode.log" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-namenode-singlenode.out" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-namenode-singlenode.out" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-namenode-singlenode.out.1" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-namenode-singlenode.out.1" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-namenode-singlenode.out.4" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-namenode-singlenode.out.4" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-nfs3-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-nfs3-singlenode.log" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-secondarynamenode-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-secondarynamenode-singlenode.log" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-hdfs-secondarynamenode-singlenode.out.5" afterPath="$PROJECT_DIR$/logs/hadoop-hdfs-secondarynamenode-singlenode.out.5" />
       <change beforePath="$PROJECT_DIR$/logs/hadoop-root-datanode-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-root-datanode-singlenode.log" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-datanode-singlenode.out" afterPath="$PROJECT_DIR$/logs/hadoop-root-datanode-singlenode.out" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-datanode-singlenode.out.1" afterPath="$PROJECT_DIR$/logs/hadoop-root-datanode-singlenode.out.1" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-datanode-singlenode.out.2" afterPath="$PROJECT_DIR$/logs/hadoop-root-datanode-singlenode.out.2" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-datanode-singlenode.out.3" afterPath="$PROJECT_DIR$/logs/hadoop-root-datanode-singlenode.out.3" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.log" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.out" afterPath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.out" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.log" afterPath="" />
       <change beforePath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.out.1" afterPath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.out.1" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.out.3" afterPath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.out.3" />
       <change beforePath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.out.4" afterPath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.out.4" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.out.5" afterPath="$PROJECT_DIR$/logs/hadoop-root-namenode-singlenode.out.5" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-portmap-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-root-portmap-singlenode.log" />
       <change beforePath="$PROJECT_DIR$/logs/hadoop-root-secondarynamenode-singlenode.log" afterPath="$PROJECT_DIR$/logs/hadoop-root-secondarynamenode-singlenode.log" />
-      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-secondarynamenode-singlenode.out.5" afterPath="$PROJECT_DIR$/logs/hadoop-root-secondarynamenode-singlenode.out.5" />
-      <change beforePath="$PROJECT_DIR$/nfs-krb5-config/core-site.xml" afterPath="$PROJECT_DIR$/nfs-krb5-config/core-site.xml" />
-      <change beforePath="$PROJECT_DIR$/nfs-krb5-config/hdfs-site.xml" afterPath="$PROJECT_DIR$/nfs-krb5-config/hdfs-site.xml" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-secondarynamenode-singlenode.out" afterPath="$PROJECT_DIR$/logs/hadoop-root-secondarynamenode-singlenode.out" />
+      <change beforePath="$PROJECT_DIR$/logs/hadoop-root-secondarynamenode-singlenode.out.1" afterPath="$PROJECT_DIR$/logs/hadoop-root-secondarynamenode-singlenode.out.1" />
+      <change beforePath="$PROJECT_DIR$/logs/jsvc.err" afterPath="$PROJECT_DIR$/logs/jsvc.err" />
       <change beforePath="$PROJECT_DIR$/tmp/dfs/data/current/BP-1448432418-192.168.1.157-1520246944646/current/VERSION" afterPath="$PROJECT_DIR$/tmp/dfs/data/current/BP-1448432418-192.168.1.157-1520246944646/current/VERSION" />
       <change beforePath="$PROJECT_DIR$/tmp/dfs/data/current/BP-1448432418-192.168.1.157-1520246944646/current/dfsUsed" afterPath="$PROJECT_DIR$/tmp/dfs/data/current/BP-1448432418-192.168.1.157-1520246944646/current/dfsUsed" />
       <change beforePath="$PROJECT_DIR$/tmp/dfs/data/current/VERSION" afterPath="$PROJECT_DIR$/tmp/dfs/data/current/VERSION" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/name/current/VERSION" afterPath="$PROJECT_DIR$/tmp/dfs/name/current/VERSION" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/name/current/edits_inprogress_0000000000000000474" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/name/current/fsimage_0000000000000000470" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/name/current/fsimage_0000000000000000470.md5" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/name/current/fsimage_0000000000000000473" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/name/current/fsimage_0000000000000000473.md5" afterPath="" />
       <change beforePath="$PROJECT_DIR$/tmp/dfs/name/current/seen_txid" afterPath="$PROJECT_DIR$/tmp/dfs/name/current/seen_txid" />
       <change beforePath="$PROJECT_DIR$/tmp/dfs/namesecondary/current/VERSION" afterPath="$PROJECT_DIR$/tmp/dfs/namesecondary/current/VERSION" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/namesecondary/current/fsimage_0000000000000000470" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/namesecondary/current/fsimage_0000000000000000470.md5" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/namesecondary/current/fsimage_0000000000000000473" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tmp/dfs/namesecondary/current/fsimage_0000000000000000473.md5" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,71 +47,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hdfs-site.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nfs-krb5-config/hdfs-site.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2157">
-              <caret line="161" column="10" lean-forward="false" selection-start-line="161" selection-start-column="10" selection-end-line="161" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hdfs-default.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/share/doc/hadoop/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1388">
-              <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yarn-site.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/etc/hadoop/yarn-site.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mapred-site.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/etc/hadoop/mapred-site.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mapred-default.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/share/doc/hadoop/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="1584" column="41" lean-forward="false" selection-start-line="1584" selection-start-column="8" selection-end-line="1584" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="core-site.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="core-site.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/etc/hadoop/core-site.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="37" column="53" lean-forward="false" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+            <state relative-caret-position="142">
+              <caret line="185" column="31" lean-forward="true" selection-start-line="185" selection-start-column="31" selection-end-line="185" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core-site.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nfs-krb5-config/core-site.xml">
+      <file leaf-file-name="DistributedWithCheckpointer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/PycharmProjects/tf/exercises/LogisticRegression/DistributedWithCheckpointer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="208" column="46" lean-forward="true" selection-start-line="208" selection-start-column="46" selection-end-line="208" selection-end-column="46" />
+            <state relative-caret-position="1944">
+              <caret line="112" column="33" lean-forward="false" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwoExamsDistributed.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/PycharmProjects/tf/exercises/LogisticRegression/TwoExamsDistributed.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slaves" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/etc/hadoop/slaves">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hdfs-site.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/etc/hadoop/hdfs-site.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="34" column="14" lean-forward="false" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -180,14 +165,14 @@
         <option value="$PROJECT_DIR$/etc/hadoop/yarn-site.xml" />
         <option value="$PROJECT_DIR$/etc/hadoop/mapred-site.xml" />
         <option value="$PROJECT_DIR$/nfs-krb5-config/hdfs-site.xml" />
-        <option value="$PROJECT_DIR$/etc/hadoop/slaves" />
         <option value="$PROJECT_DIR$/nfs-krb5-config/core-site.xml" />
+        <option value="$PROJECT_DIR$/etc/hadoop/slaves" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2219" />
-    <option name="y" value="181" />
+    <option name="x" value="2090" />
+    <option name="y" value="86" />
     <option name="width" value="1585" />
     <option name="height" value="906" />
   </component>
@@ -208,7 +193,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,10 +220,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../docker-hadoop/dockerfile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
@@ -303,19 +288,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2219" y="181" width="1585" height="906" extended-state="0" />
+    <frame x="2090" y="86" width="1585" height="906" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29211357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -352,28 +337,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/文档/commands/hadoop.cd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etc/hadoop/hdfs-site.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2286">
-          <caret line="127" column="51" lean-forward="false" selection-start-line="127" selection-start-column="51" selection-end-line="127" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/doc/hadoop/hadoop-yarn/hadoop-yarn-common/yarn-default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4572">
-          <caret line="254" column="46" lean-forward="false" selection-start-line="254" selection-start-column="31" selection-end-line="254" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/etc/hadoop/yarn-site.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -632,7 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -641,6 +603,28 @@
         <state relative-caret-position="1916">
           <caret line="117" column="28" lean-forward="true" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/doc/hadoop/hadoop-project-dist/hadoop-common/core-default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-578">
+          <caret line="1057" column="14" lean-forward="false" selection-start-line="1057" selection-start-column="7" selection-end-line="1057" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nfs-krb5-config/core-site.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3744">
+          <caret line="208" column="46" lean-forward="false" selection-start-line="208" selection-start-column="46" selection-end-line="208" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/doc/hadoop/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="1584" column="41" lean-forward="false" selection-start-line="1584" selection-start-column="8" selection-end-line="1584" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -660,66 +644,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/doc/hadoop/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="1584" column="41" lean-forward="false" selection-start-line="1584" selection-start-column="8" selection-end-line="1584" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/share/doc/hadoop/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1388">
+        <state relative-caret-position="18">
           <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/doc/hadoop/hadoop-project-dist/hadoop-common/core-default.xml">
+    <entry file="file://$PROJECT_DIR$/nfs-krb5-config/hdfs-site.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="1057" column="14" lean-forward="false" selection-start-line="1057" selection-start-column="7" selection-end-line="1057" selection-end-column="14" />
+        <state relative-caret-position="213">
+          <caret line="161" column="10" lean-forward="false" selection-start-line="161" selection-start-column="10" selection-end-line="161" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/etc/hadoop/slaves">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/hadoop/container-executor.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/tf/exercises/LogisticRegression/DistributedWithCheckpointer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1944">
+          <caret line="112" column="33" lean-forward="false" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/tf/exercises/LogisticRegression/TwoExamsDistributed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/etc/hadoop/hdfs-site.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfs-krb5-config/hdfs-site.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2157">
-          <caret line="161" column="10" lean-forward="false" selection-start-line="161" selection-start-column="10" selection-end-line="161" selection-end-column="10" />
+        <state relative-caret-position="612">
+          <caret line="34" column="14" lean-forward="false" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/etc/hadoop/core-site.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="37" column="53" lean-forward="false" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nfs-krb5-config/core-site.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="208" column="46" lean-forward="true" selection-start-line="208" selection-start-column="46" selection-end-line="208" selection-end-column="46" />
+        <state relative-caret-position="142">
+          <caret line="185" column="31" lean-forward="true" selection-start-line="185" selection-start-column="31" selection-end-line="185" selection-end-column="31" />
           <folding />
         </state>
       </provider>

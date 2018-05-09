@@ -1,4 +1,4 @@
-ulimit -a for user hdfs
+ulimit -a for secure datanode user hdfs
 core file size          (blocks, -c) 0
 data seg size           (kbytes, -d) unlimited
 scheduling priority             (-e) 0

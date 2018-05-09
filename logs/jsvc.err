@@ -99,3 +99,39 @@ Successfully obtained privileged resources (streaming port = ServerSocket[addr=/
 Opened info server at /0.0.0.0:1006
 Starting regular datanode initialization
 Service exit with a return value of 129
+Initializing secure datanode resources
+Opened streaming server at /0.0.0.0:1004
+Successfully obtained privileged resources (streaming port = ServerSocket[addr=/0.0.0.0,localport=1004] ) (http listener port = 1006)
+Opened info server at /0.0.0.0:1006
+Starting regular datanode initialization
+Service exit with a return value of 1
+Initializing secure datanode resources
+Opened streaming server at /0.0.0.0:1004
+Successfully obtained privileged resources (streaming port = ServerSocket[addr=/0.0.0.0,localport=1004] ) (http listener port = 1006)
+Opened info server at /0.0.0.0:1006
+Starting regular datanode initialization
+Service exit with a return value of 1
+Initializing secure datanode resources
+Opened streaming server at /0.0.0.0:1004
+Successfully obtained privileged resources (streaming port = ServerSocket[addr=/0.0.0.0,localport=1004] ) (http listener port = 1006)
+Opened info server at /0.0.0.0:1006
+Starting regular datanode initialization
+Service exit with a return value of 1
+Initializing secure datanode resources
+Opened streaming server at /0.0.0.0:1004
+Successfully obtained privileged resources (streaming port = ServerSocket[addr=/0.0.0.0,localport=1004] ) (http listener port = 1006)
+Opened info server at /0.0.0.0:1006
+Starting regular datanode initialization
+Service exit with a return value of 143
+Initializing secure datanode resources
+Opened streaming server at /0.0.0.0:1004
+Successfully obtained privileged resources (streaming port = ServerSocket[addr=/0.0.0.0,localport=1004] ) (http listener port = 1006)
+Opened info server at /0.0.0.0:1006
+Starting regular datanode initialization
+Service exit with a return value of 129
+Initializing secure datanode resources
+Opened streaming server at /0.0.0.0:1004
+Successfully obtained privileged resources (streaming port = ServerSocket[addr=/0.0.0.0,localport=1004] ) (http listener port = 1006)
+Opened info server at /0.0.0.0:1006
+Starting regular datanode initialization
+Service exit with a return value of 129

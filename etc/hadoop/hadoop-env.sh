@@ -25,7 +25,7 @@
 # The java implementation to use.
 export JAVA_HOME=/usr/lib/jdk1.8.0_161
 export JSVC_HOME=/opt/hadoop-2.7.2/commons-daemon-1.1.0-src/src/native/unix
-#export HADOOP_SECURE_DN_USER=hdfs
+export HADOOP_SECURE_DN_USER=hdfs
 
 # The jsvc implementation to use. Jsvc is required to run secure datanodes
 # that bind to privileged ports to provide authentication of data transfer
